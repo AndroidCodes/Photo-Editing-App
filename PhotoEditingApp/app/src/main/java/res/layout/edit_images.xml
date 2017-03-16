@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/edit_img_background_color"
+        android:gravity="center">-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <include layout="@layout/header"></include>
+
+        <jp.co.cyberagent.android.gpuimage.GPUImageView
+            android:id="@+id/gv_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/edit_img_background_color"
+            android:elevation="@dimen/large_elevation" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/iv_imgEffectIcon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/brightness" />
+
+            <SeekBar
+                android:id="@+id/sb_seekEffect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:gravity="center"
+                android:maxHeight="12dp"
+                android:progressDrawable="@drawable/slider"
+                android:thumb="@drawable/slider_thumb"
+                android:thumbTintMode="multiply" />
+        </LinearLayout>
+
+        <!--</RelativeLayout>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#9A7A85" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <HorizontalScrollView
+                android:id="@+id/hsv_scrollEffcts"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#6DFFFFFF"
+                android:scrollbars="none"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/btn_brightness"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:src="@drawable/brightness" /> <!--android:text="@string/brightness"-->
+
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="#9A7A85" />
+
+                    <ImageView
+                        android:id="@+id/btn_contrast"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:src="@drawable/contrast" />
+                    <!--android:text="@string/contrast"-->
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="#9A7A85" />
+
+                    <ImageView
+                        android:id="@+id/btn_saturation"
+                        android:layout_width="42dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:src="@drawable/saturation" />
+                    <!--android:text="@string/saturation"-->
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="#9A7A85" />
+
+                    <ImageView
+                        android:id="@+id/btn_hue"
+                        android:layout_width="42dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:src="@drawable/hue" />
+                    <!--android:text="@string/hue"-->
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="#9A7A85" />
+
+                    <ImageView
+                        android:id="@+id/btn_sepia"
+                        android:layout_width="42dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:src="@drawable/sepia" />
+                    <!--android:text="@string/sepia"-->
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="#9A7A85" />
+
+                    <ImageView
+                        android:id="@+id/btn_sharpness"
+                        android:layout_width="42dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:src="@drawable/sharpness" />
+                    <!--android:text="@string/sharpness"-->
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="#9A7A85" />
+
+                    <ImageView
+                        android:id="@+id/btn_bulge_distortion"
+                        android:layout_width="42dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:src="@drawable/bulge_destortion" />
+                    <!--android:text="@string/bulge_distortion"-->
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="#9A7A85" />
+
+                    <ImageView
+                        android:id="@+id/btn_emboss"
+                        android:layout_width="42dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:gravity="center"
+                        android:padding="2dp"
+                        android:src="@drawable/emboss" />
+                    <!--android:text="Emboss"-->
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <!--<LinearLayout
+                android:id="@+id/ll_doEffect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Cancel"
+                    android:textAllCaps="false"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btn_apply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Apply"
+                    android:textAllCaps="false"
+                    android:textSize="15sp" />
+
+            </LinearLayout>-->
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_animEffect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/brightness"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/frame_inside_color"
+        android:textSize="35dp"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_color"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/btn_exit"
+        android:textSize="@dimen/large_text" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="5dp"
+        android:background="@color/card_background" />
+
+    <com.larswerkman.holocolorpicker.ColorPicker
+        android:id="@+id/cp_picker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.larswerkman.holocolorpicker.SVBar
+        android:id="@+id/sb_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.larswerkman.holocolorpicker.OpacityBar
+        android:id="@+id/ob_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_apply"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/apply"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_exit"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/btn_exit"
+            android:textSize="@dimen/medium_text" />
+
+    </LinearLayout>
+
+</LinearLayout>

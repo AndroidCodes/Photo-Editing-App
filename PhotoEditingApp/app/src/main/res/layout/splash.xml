@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="@drawable/main_img"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo_name" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:adjustViewBounds="true"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/punchline" />
+
+</LinearLayout>

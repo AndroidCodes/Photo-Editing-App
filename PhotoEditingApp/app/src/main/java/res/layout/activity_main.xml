@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context="com.example.peacock.frameimages.com.example.frameimages.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.4"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/banner"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/stripe"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.5"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_weight="2.2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_frames"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/xxsmall_margin"
+                android:layout_marginTop="@dimen/xxsmall_margin"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/xxsmall_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/frames" />
+
+            <ImageView
+                android:id="@+id/iv_myAlbum"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/xxsmall_margin"
+                android:layout_marginLeft="@dimen/xxsmall_margin"
+                android:layout_marginTop="13dp"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/xxsmall_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/album" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/medium_margin"
+            android:layout_weight="2"
+            android:gravity="center|start"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_pip"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/xxsmall_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pip" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

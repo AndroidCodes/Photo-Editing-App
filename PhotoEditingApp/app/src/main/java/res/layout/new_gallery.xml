@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <include layout="@layout/header" />
+
+    <FrameLayout
+        android:id="@+id/fl_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="2dp"
+        android:scrollbars="none" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/bottom_bg"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_selectedImgCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/selecteImgs"
+            android:textAllCaps="false"
+            android:paddingTop="5dp"
+            android:paddingLeft="@dimen/xxsmall_margin"
+            android:textColor="@color/frame_inside_color"
+            android:textSize="@dimen/textsize" />
+
+        <FrameLayout
+            android:id="@+id/fl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_selectedImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scrollbars="none" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

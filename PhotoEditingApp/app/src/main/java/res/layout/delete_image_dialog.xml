@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/exit_dialog_background"
+        android:gravity="center"
+        android:text="@string/delete"
+        android:textAllCaps="false"
+        android:layout_marginBottom="2dp"
+        android:textColor="@color/exit_text"
+        android:textSize="@dimen/large_text" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/exit_dialog_background"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="67dp"
+            android:layout_height="67dp"
+            android:padding="@dimen/large_padding"
+            android:background="@drawable/exit_icon" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="@string/delete_image"
+            android:textAllCaps="false"
+            android:textColor="@color/exit_text"
+            android:textSize="@dimen/medium_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/btn_cancel"
+            android:text="@string/cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/frame_inside_color"
+            android:textSize="@dimen/medium_text" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/btn_exit"
+            android:text="@string/delete"
+            android:textAllCaps="false"
+            android:textColor="@color/frame_inside_color"
+            android:textSize="@dimen/medium_text" />
+
+    </LinearLayout>
+</LinearLayout>

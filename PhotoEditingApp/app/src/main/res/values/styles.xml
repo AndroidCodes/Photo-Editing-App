@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="demoTheme" parent="@android:style/Theme.Holo">
+        <item name="android:actionBarStyle">@style/demoActionBar</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="demoActionBar" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/actionBarBackground</item>
+    </style>
+
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ActionBarStyle" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="elevation">10dp</item>
+    </style>
+
+    <style name="MenuLabelsStyle">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MenuButtonsStyle">
+        <item name="fab_size">mini</item>
+        <item name="fab_showAnimation">@anim/jump_from_down</item>
+        <item name="fab_hideAnimation">@anim/jump_to_down</item>
+        <item name="fab_shadowColor">#444444</item>
+        <item name="fab_colorNormal">#FFB805</item>
+        <item name="fab_colorPressed">#F2AB00</item>
+        <item name="fab_colorRipple">#D99200</item>
+    </style>
+
+    <style name="MenuSmallButtonsStyle">
+        <item name="fab_size">mini</item>
+        <item name="fab_showAnimation">@anim/jump_from_down</item>
+        <item name="fab_hideAnimation">@anim/jump_to_down</item>
+        <item name="fab_colorNormal">@color/fam_backgroundDark</item>
+        <item name="fab_colorPressed">@color/fam_background</item>
+        <item name="fab_colorRipple">@color/fam_background</item>
+    </style>
+
+    <style name="MenuButtonsSmall">
+        <item name="fab_size">mini</item>
+        <item name="fab_colorNormal">#40FFFFFF</item>
+        <item name="fab_colorPressed">#40FFFFFF</item>
+        <item name="fab_colorRipple">#40FFFFFF</item>
+    </style>
+
+    <style name="CustomProgressDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <declare-styleable name="TouchImageView">
+
+        <attr name="mask" format="reference" />
+
+    </declare-styleable>
+
+</resources>

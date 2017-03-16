@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@android:color/black"
+        android:minHeight="?attr/actionBarSize"
+        android:title="Gallery"
+        android:titleTextColor="#ffffff"></android.support.v7.widget.Toolbar>-->
+
+    <include layout="@layout/header" />
+
+    <FrameLayout
+        android:id="@+id/displayList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".81">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".19"
+        android:background="@drawable/bottom_bg"
+        android:minHeight="100dp"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/tv_ins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/selected_photos"
+            android:textAlignment="center"
+            android:textColor="@android:color/white" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_views"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</LinearLayout>

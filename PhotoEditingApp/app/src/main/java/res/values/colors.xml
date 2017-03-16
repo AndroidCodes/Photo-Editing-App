@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#AD8792</color>
+    <color name="colorPrimaryDark">#FD986775</color>
+    <color name="colorAccent">#AD8792</color>
+    <color name="background_1">#809f7e87</color>
+    <color name="background">#111111</color>
+    <color name="actionBarBackground">#282828</color>
+    <color name="frame_inside_color">#FFFFFF</color>
+    <color name="edit_img_background_color">#10000000</color>
+    <color name="seekbar_background">#20000000</color>
+    <color name="frames_activity_backgroud">#80363636</color>
+    <color name="pip_progress_background">#FFFFFF</color>
+    <color name="fam_backgroundDark">#6600ff</color>
+    <color name="fam_background">#7c23ff</color>
+    <color name="exit_text">#464545</color>
+    <color name="exit_dialog_background">#e0e0dd</color>
+    <color name="btn_exit">#3dafae</color>
+    <color name="btn_cancel">#ec6e6e</color>
+    <color name="text_color">#6d6d6d</color>
+    <color name="edit_text">#e0e0dd</color>
+    <color name="grid_background">#eeeeee</color>
+    <color name="selected_effect">#9b808f</color>
+    <color name="card_background">#cfbcb6</color>
+    <color name="windowColor">#80000000</color>
+
+    <!--<array name="material_colors">
+        <item>#F44336</item>
+        <item>#9C27B0</item>
+        <item>#3F51B5</item>
+        <item>#03A9F4</item>
+        <item>#009688</item>
+        <item>#8BC34A</item>
+        <item>#FFEB3B</item>
+        <item>#FF9800</item>
+        <item>#795548</item>
+        <item>#607D8B</item>
+    </array>-->
+
+</resources>

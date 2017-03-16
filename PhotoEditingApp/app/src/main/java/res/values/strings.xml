@@ -1,0 +1,46 @@
+<resources>
+
+    <string name="app_name">Photo Editing App</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="frames">Frames</string>
+    <string name="image_selection">Select From...</string>
+    <string name="brightness">Brightness</string>
+    <string name="contrast">Contrast</string>
+    <string name="saturation">Saturation</string>
+    <string name="hue">Hue</string>
+    <string name="sepia">Sepia</string>
+    <string name="sharpness">Sharpness</string>
+    <string name="bulge_distortion">Bulge \n Distortion</string>
+    <string name="emboss">Emboss</string>
+    <string name="exit_app_string"> Sure want to exit ?</string>
+    <string name="exit">Exit</string>
+    <string name="cancel">Cancel</string>
+    <string name="delete_image">Sure to delete .. ?</string>
+    <string name="delete">Delete</string>
+    <string name="my_album">My Albums</string>
+    <string name="warning">Min 3 and Max 5 Images</string>
+    <string name="cameraPermission">Give permission to access camera</string>
+    <string name="storagePermission">Give permission to read/write storage</string>
+    <string name="mountSDcard">Please mount storage</string>
+    <string name="hint">Enter Text</string>
+    <string name="pip_text">PIP Image</string>
+    <string name="save_frame">Save Frame</string>
+    <string name="foreground">Foreground</string>
+    <string name="background">Background</string>
+    <string name="effect">Effect</string>
+    <string name="select_color">Select Color</string>
+    <string name="apply">Apply</string>
+    <string name="selected_photos">Selected Photos</string>
+    <string name="noAlbumfound">No Album/Iamges Found</string>
+    <string name="imgNotFound">Image Not Found</string>
+    <string name="selecteImgs">Selected Images : </string>
+    <string name="selectImgsFirst">Please Select Images First !!!</string>
+
+    <!--<array name="colors">
+        <item>#3F51B5</item>
+        <item>#303F9F</item>
+        <item>#FF4081</item>
+    </array>-->
+
+</resources>

@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/card_background"
+    app:cardCornerRadius="@dimen/xxxsmall_margin"
+    app:cardElevation="@dimen/small_elevation"
+    app:cardPreventCornerOverlap="true"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/ll_save"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:elevation="@dimen/large_elevation"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:elevation="@dimen/large_elevation">
+                <!--android:background="@color/cardview_light_background"-->
+
+                <com.example.androidcodes.photoeditingapp.TouchImageView.TouchImageView
+                    android:id="@+id/tiv_image_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="matrix" />
+
+                <LinearLayout
+                    android:id="@+id/ll_editLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/background_1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_effect1"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit" />
+
+                    <TextView
+                        android:id="@+id/tv_changeImg1"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/btn_gallery" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_frame_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/vrcl_frame_7" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:elevation="@dimen/large_elevation">
+                <!--android:background="@color/cardview_light_background"-->
+
+                <com.example.androidcodes.photoeditingapp.TouchImageView.TouchImageView
+                    android:id="@+id/tiv_image_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="matrix" />
+
+                <LinearLayout
+                    android:id="@+id/ll_editLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/background_1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_effect2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit" />
+
+                    <TextView
+                        android:id="@+id/tv_changeImg2"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/btn_gallery" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_frame_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/vrcl_frame_15" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:elevation="@dimen/large_elevation"
+            android:orientation="vertical"
+            android:weightSum="5">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:elevation="@dimen/large_elevation">
+                <!--android:background="@color/cardview_light_background"-->
+
+                <com.example.androidcodes.photoeditingapp.TouchImageView.TouchImageView
+                    android:id="@+id/tiv_image_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="matrix" />
+
+                <LinearLayout
+                    android:id="@+id/ll_editLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/background_1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/xxsmall_margin"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_effect4"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit" />
+
+                    <TextView
+                        android:id="@+id/tv_changeImg4"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/btn_gallery" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_frame_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/vrcl_frame_14" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:elevation="@dimen/large_elevation">
+                <!--android:background="@color/cardview_light_background"-->
+
+                <com.example.androidcodes.photoeditingapp.TouchImageView.TouchImageView
+                    android:id="@+id/tiv_image_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="matrix" />
+
+                <LinearLayout
+                    android:id="@+id/ll_editLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/background_1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_effect3"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/edit" />
+
+                    <TextView
+                        android:id="@+id/tv_changeImg3"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/btn_gallery" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_frame_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/vrcl_frame_9" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:elevation="@dimen/large_elevation">
+            <!--android:background="@color/cardview_light_background"-->
+
+            <com.example.androidcodes.photoeditingapp.TouchImageView.TouchImageView
+                android:id="@+id/tiv_image_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="matrix" />
+
+            <LinearLayout
+                android:id="@+id/ll_editLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/background_1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_effect5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/edit" />
+
+                <TextView
+                    android:id="@+id/tv_changeImg5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/btn_gallery" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_frame_5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/vrcl_frame_13" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
